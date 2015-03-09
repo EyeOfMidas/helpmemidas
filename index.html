@@ -1,0 +1,86 @@
+<html>
+<head>
+<style type="text/css">
+html,body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+code {
+	font-style: italic;
+	color: black;
+}
+
+a:link, a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+	text-decoration: none;
+}
+a:hover, a:active {
+	text-decoration: underline;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -40px auto;
+}
+
+
+#suggestion {
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	font-size: 48px;
+	text-align: center;
+	color: #666666;
+}
+#ask-container {
+	padding-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
+
+#ask {
+	width: 200px;
+}
+
+#footer, .push {
+	height: 30px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+</style>
+<title>What would Midas do?</title>
+</head>
+<body>
+<div class="wrapper">
+<div id="suggestion">Did you try rebooting?</div>
+<div id="ask-container"><button id="ask">Help Midas! That doesn't answer my problem!</button></div>
+<div class="push"></div>
+</div>
+<div id="footer"><a href="mailto:eyeofmidas@gmail.com">Midas is always willing to help.</a></div>
+<script src="suggestions.js" type="text/javascript"></script>
+<script type="text/javascript">
+var suggest = document.getElementById('suggestion');
+var ask = document.getElementById('ask');
+var lastRand = 0;
+ask.addEventListener('click', function() {
+	var rand = Math.floor(suggestions.length * Math.random());
+	while(rand === lastRand) {
+		rand = Math.floor(suggestions.length * Math.random());
+	}
+	suggest.innerHTML = suggestions[rand];
+	lastRand = rand;
+});
+ask.click();
+</script>
+</body>
+</html>
