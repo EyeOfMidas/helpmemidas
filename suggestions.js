@@ -18,7 +18,7 @@ var suggestions = [
 "Do one simple, easy-to-understand thing. Make it work. Then add to it.",
 "All of these features are nice, but we should really focus on the minimum viable product.",
 "You use regular expressions on string manipulation! It's super effective!",
-"To change a file to be executable, you'll have to <code>ch</code>ange it's <code>mod</code>ifiers. ;)"
+"To change a file to be executable, you'll have to <code>ch</code>ange its <code>mod</code>ifiers. ;)"
 
 
 
