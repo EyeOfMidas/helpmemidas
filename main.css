@@ -1,0 +1,52 @@
+html,body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+code {
+	font-style: italic;
+	color: black;
+}
+
+a:link, a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+	text-decoration: none;
+}
+a:hover, a:active {
+	text-decoration: underline;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -40px auto;
+}
+#suggestion {
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	font-size: 48px;
+	text-align: center;
+	color: #666666;
+}
+#ask-container {
+	padding-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
+#ask {
+	width: 200px;
+}
+#footer, .push {
+	height: 30px;
+	text-align: center;
+	padding-top: 10px;
+}
+
